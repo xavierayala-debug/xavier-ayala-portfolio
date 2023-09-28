@@ -4,41 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xavier-Ayala-Portfolio</title>
-    <link rel="stylesheet" href="./home.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./home.css">
 </head>
 <body>
-    <header class="p-3 mb-3 border-bottom">
+    <!--TOP NAV-->
+    <header class="p-3 mb-3 border-bottom w-100">
         <div class="container">
-          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
-              <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
-            </a>
-    
-            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-              <li><a href="#" class="nav-link px-2 link-secondary">Overview</a></li>
-              <li><a href="#" class="nav-link px-2 link-body-emphasis">Inventory</a></li>
-              <li><a href="#" class="nav-link px-2 link-body-emphasis">Customers</a></li>
-              <li><a href="#" class="nav-link px-2 link-body-emphasis">Products</a></li>
-            </ul>
-    
-            
-    
-            <div class="dropdown text-end">
-              <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
-              </a>
-              <ul class="dropdown-menu text-small">
-                <li><a class="dropdown-item" href="#">New project...</a></li>
-                <li><a class="dropdown-item" href="#">Settings</a></li>
-                <li><a class="dropdown-item" href="#">Profile</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Sign out</a></li>
-              </ul>
+            <div class="d-flex justify-content-center justify-content-lg-start align-items-center flex-wrap">
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 ">
+                <li> <a class="btn" href="#" role="button">Home</a></li>
+                <li> <a class="btn ms-3" href="#" role="button">About Me</a></li>
+                <li> <a class="btn ms-3" href="#" role="button">Projects</a></li>
+                <li> <a class="btn ms-3" href="#" role="button">Social</a></li>
+                <li> <a class="btn ms-3" href="#" role="button">Contact Me</a></li>
+                </ul>
+                <div class="d-flex nav flex-shrink-0 dropdown ">
+                    <a href="#" class="link-body-emphasis text-decoration-none dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="../Assets/IMG-5932.jpg" alt="mdo" width="45" height="50" class="rounded-circle">
+                    </a>
+                    <ul class="dropdown-menu text-small shadow">
+                        <li><a class="dropdown-item" href="#">New project...</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                    </ul>
+                </div>
             </div>
-          </div>
         </div>
       </header>
+    
+    <!--1st Hero-->
+        <div class="hello pt-2 mx-auto d-block text-center w-50">
+            <h1 class=" fw-bold text-body-emphasis text-center" id="Hello">Hello,  <span class="I-am"> I am Xavier</span></h1>
+        </div>
+        <div class="col-lg-6 mx-auto text-center">
+          <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+        </div>
+    </div>
+    
+
+
 
 </body>
 </html>

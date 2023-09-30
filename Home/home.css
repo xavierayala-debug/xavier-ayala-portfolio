@@ -1,4 +1,5 @@
 
+
 header{
    background-image: linear-gradient(to right, #CDFFD8, #94B9FF);
 }
@@ -114,3 +115,39 @@ h3{
    margin-left: 100px;
    
 }
+=======
+html{
+    background-color: #F4F1E8;
+}
+ header{
+    background-image: linear-gradient(to right, #CDFFD8, #94B9FF);
+ }
+
+ .btn{
+    background-color: #F4F1E8;
+    color: black;
+    border-color: #F4F1E8;
+    border-radius: 40px;
+    font-weight: bold;
+ }
+
+ .btn:hover{
+    background-color: #FFE7A0;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    
+ }
+
+ #Hello{
+    border-bottom: dotted 5px black;
+    letter-spacing: -0.021em;
+    font-size: 114.9px;
+    font-family: YAEDe2m9QEM-0;
+    text-align: center;
+    /*width: fit-content;*/
+ }
+ 
+ .I-am{
+    color: #94B9FF;
+ }
+
+

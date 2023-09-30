@@ -1,6 +1,4 @@
-html{
-   background-color: #F4F1E8;
-}
+
 header{
    background-image: linear-gradient(to right, #CDFFD8, #94B9FF);
 }
@@ -32,3 +30,87 @@ header{
    color: #94B9FF;
 }
 
+body{
+   background-color: #F4F1E8;
+}
+
+.hero{
+   margin-bottom: 30px;
+}
+
+.hero-divider{
+ border: solid 1px rgb(0, 0, 0);
+ opacity: 1;
+}
+
+.grid-container{
+   display: grid;
+   grid-template-columns: 26% 24% 24% 24%;
+   grid-template-rows: 50px 300px auto auto;
+   font-family: YAEDe2m9QEM-0;
+   text-align: left;
+   margin-top: 50px;
+   margin-left: 20px;
+   height: 75vh
+}
+
+h2{
+   border-bottom: dotted 5px black;
+   width: fit-content;
+   padding-bottom: 50px;
+   font-weight: 400;
+   font-size: 42.6667px;
+ 
+   
+}
+
+.about-me-p{
+   letter-spacing: 2.5px;
+   padding-top: 5px;
+   grid-area: 2 / 1 / 4 / 2;
+   margin-top: 20px;
+}
+
+.projects{
+   margin-left: 100px;
+   grid-area: 1 / 2 / 2 /3;
+}
+
+h3{
+   font-weight: 100;
+}
+
+.h2-about-me{
+  grid-area: 1 / 1 / 2 / 2;
+  
+}
+
+
+.project-image{
+   width: 210px;
+   height: 210px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.project-image:hover{
+   -ms-transform: scale(1.10); /* IE 9 */
+  -webkit-transform: scale(1.10); /* Safari 3-8 */
+  transform: scale(1.10);
+}
+
+.painting{
+   margin-top: 20px;
+   padding-top: 5px;
+   margin-left: 100px;
+   grid-area: 2 / 2 / 3 / 3;
+}
+
+.tindog{
+   grid-area: 3 / 2 / 4 /3;
+}
+
+.project-alignment{
+   padding-top: 5px;
+   margin-left: 100px;
+   
+}

@@ -1,5 +1,6 @@
 body{
    background-color: #F4F1E8;
+   font-family: YAEDe2m9QEM-0;
 }
 
 /* TopNav and Hero CSS*/
@@ -25,7 +26,6 @@ header{
    border-bottom: dotted 5px black;
    letter-spacing: -0.021em;
    font-size: 114.9px;
-   font-family: YAEDe2m9QEM-0;
    text-align: center;
    /*width: fit-content;*/
 }
@@ -54,11 +54,11 @@ p{
    display: grid;
    grid-template-columns: 50% 25% 25%;
    grid-template-rows: 50px 300px auto auto;
-   font-family: YAEDe2m9QEM-0;
+  
    text-align: left;
    margin-top: 50px;
    margin-left: 20px;
-   height: 55vh
+
 }
 
 h2{
@@ -148,12 +148,11 @@ h3{
 .history{
    display: grid;
    grid-template-columns: 50% 50%;
-   grid-template-rows: 50px 50% 50%;
-   font-family: YAEDe2m9QEM-0;
+   grid-template-rows: 50px 100% ;
    text-align: left;
-   margin-top: 50px;
+   margin-top: 25px;
    margin-left: 20px;
-   height: 75vh
+
 }
 
 .skills{
@@ -170,5 +169,53 @@ ul{
    grid-area: 2 / 1 / 3 / 2;
 }
 
+.certificate-block{
+   margin-left: 100px;
+}
+.certificates{
+   padding: 0px;
+   margin-bottom: 0%;
+   grid-area: 1 / 2 / 2 / 3
+}
+
+.college{
+   margin-top: 55px;
+   margin-bottom: 0%;
+   padding: 0px;
+   list-style: none;
+   font-size:x-large;
+}
+
+.experience-grid{
+   display: grid;
+   grid-template-columns: 50% 50%;
+   grid-template-rows: 50px 100%;
+   text-align: left;
+   margin-top: 25px;
+   margin-left: 20px;
+   height: 75vh
+
+}
+
+.experience{
+   margin: 0%;
+   grid-area: 1 / 1  / 2 / 2;
+   padding-bottom: 50px;
+}
+
+.experience-history-1{
+   grid-area: 2 / 1 / 3 / 2 ;
+}
+
+.job-title{
+   margin-top: 40px;
+   padding: 0%;
+   list-style: none;
+   font-size: large;
+}
+
+.job-title-2{
+   grid-area: 2 / 2 / 3 / 3 ;
+}
 
 

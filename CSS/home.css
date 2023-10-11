@@ -1,0 +1,319 @@
+html{
+   scroll-behavior: smooth;
+}
+body{
+   background-color: #F4F1E8;
+   font-family: YAEDe2m9QEM-0;
+}
+
+/* TopNav and Hero CSS*/
+header{
+   background-image: linear-gradient(to right, #CDFFD8, #94B9FF);
+}
+
+.btn{
+   background-color: #F4F1E8;
+   color: black;
+   border-color: #F4F1E8;
+   border-radius: 40px;
+   font-weight: bold;
+}
+
+.btn:hover{
+   background-color: #FFE7A0;
+   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+   
+}
+
+.hello{
+   text-align: center;
+}
+
+#Hello{
+   border-bottom: dotted 5px black;
+   letter-spacing: -0.021em;
+   font-size: 114.9px;
+   width: fit-content;
+}
+
+.I-am{
+   color: #94B9FF;
+}
+
+p{
+   font-size: larger;
+}
+
+
+.hero{
+   margin-bottom: 30px;
+}
+
+.hero-divider{
+ border: solid 1px rgb(0, 0, 0);
+ opacity: 1;
+}
+
+/*About me and project CSS*/
+
+.grid-container{
+   display: grid;
+   grid-template-columns: 50% 25% 25%;
+   grid-template-rows: 50px 300px auto auto;
+  
+   text-align: left;
+   margin-top: 50px;
+   margin-left: 20px;
+
+}
+
+h2{
+   border-bottom: dotted 5px black;
+   width: fit-content;
+   padding-bottom: 50px;
+   font-weight: 400;
+   font-size: 42.6667px;
+}
+
+.h2-about-me{
+   grid-area: 1 / 1 / 2 / 2;
+ }
+
+.about-me-p{
+   letter-spacing: 2.5px;
+   word-spacing: 5px;
+   padding-top: 5px;
+   grid-area: 2 / 1 / 4 / 2;
+   margin-top: 20px;
+   font-size: larger;
+}
+
+.projects{
+   margin-left: 100px;
+   grid-area: 1 / 2 / 2 /3;
+}
+
+h3{
+   font-weight: 100;
+}
+
+.project-image{
+   width: 210px;
+   height: 210px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.project-image:hover{
+   -ms-transform: scale(1.10); /* IE 9 */
+  -webkit-transform: scale(1.10); /* Safari 3-8 */
+  transform: scale(1.10);
+}
+
+.project-alignment-1st-row{
+   padding-top: 5px;
+   margin-left: 100px;
+   
+}
+
+.project-alignment{
+   margin-top: 20px;
+   padding-top: 5px;
+ }
+
+.painting{
+   margin-top: 20px;
+   padding-top: 5px;
+   margin-left: 100px;
+   grid-area: 2 / 2 / 3 / 3;
+}
+
+.tindog{
+   grid-area: 3 / 2 / 4 /3;
+}
+
+.pricing-table{
+   grid-area: 2 / 3 / 3 / 4;
+ }
+
+.web-design{
+   padding-top: 5px;
+   grid-area: 3 / 3 / 4 / 4;
+}
+ 
+/* History CSS*/
+
+.history{
+   display: grid;
+   grid-template-columns: 50% 50%;
+   grid-template-rows: 50px 100% ;
+   text-align: left;
+   margin-top: 25px;
+   margin-left: 20px;
+}
+
+.skills{
+   padding: 0px;
+   grid-area: 1 / 1 / 2 / 2;
+}
+
+ul{
+   margin-top: 15px;
+   font-size: larger;
+}
+
+.ul-skills{
+   grid-area: 2 / 1 / 3 / 2;
+}
+
+.certificate-block{
+   margin-left: 100px;
+}
+.certificates{
+   padding: 0px;
+   margin-bottom: 0%;
+   grid-area: 1 / 2 / 2 / 3
+}
+
+.college{
+   margin-top: 55px;
+   margin-bottom: 0%;
+   padding: 0px;
+   list-style: none;
+   font-size:x-large;
+}
+
+/*Experince CSS*/
+
+.experience-grid{
+   display: grid;
+   grid-template-columns: 50% 50%;
+   grid-template-rows: 50px 100%;
+   text-align: left;
+   margin-top: 25px;
+   margin-left: 20px;
+   height: auto;
+}
+
+.experience{
+   margin: 0%;
+   grid-area: 1 / 1  / 2 / 2;
+   padding-bottom: 50px;
+}
+
+.experience-history-1{
+   grid-area: 2 / 1 / 3 / 2;
+}
+
+.job-title{
+   margin-top: 40px;
+   padding: 0%;
+   list-style: none;
+   font-size: large;
+}
+
+.job-title-2{
+   grid-area: 2 / 2 / 3 / 3;
+}
+
+/*Responsiveness*/
+
+@media (min-width: 1333px) and (max-width: 1452px){
+   .history{
+      grid-template-rows: repeat(autofill);
+   }
+
+   .certs{
+      margin-top: 60px;
+      margin-bottom: 0%;
+   }
+
+   .college{
+      margin-top: 10px
+   }
+
+
+}
+
+@media (max-width: 1332px){
+   .grid-container{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      height: auto;
+      width: auto;
+   }
+
+   .about-me-p{
+      margin-top: 0%;
+   }
+
+   .projects{
+      margin-left: 0%;
+   }
+
+   h2{
+      padding-bottom: 10px;
+      margin-bottom: 25px;
+      width: 100%;
+   }
+
+   h3{
+      margin-top: 20px;
+   }
+   .painting {
+      padding: 0%;
+      margin: 0%;
+      flex: 50%;
+   }
+
+   .tindog{
+      padding: 0%;
+      margin: 0%;
+      flex: 50%;
+   }
+
+   .pricing-table{
+      padding: 0%;
+      margin: 0%;
+      flex: 50%;
+   }
+
+   .web-design{
+      padding: 0%;
+      margin: 0%;
+      flex: 50%
+   }
+
+   .history{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      height: auto;
+   }
+
+   .certificate-block{
+      margin-left: 0%;
+   }
+
+   .experience-grid{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      height: auto;
+   }
+
+   .experience{
+      padding-bottom: 0%;
+   }
+}
+
+@media (max-width: 422px){
+   h1{
+      font-size: 5vh;
+      word-wrap: break-word;
+   }
+
+   h2{
+      font-size: 2rem;
+   }
+}

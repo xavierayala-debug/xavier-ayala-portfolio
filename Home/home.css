@@ -1,3 +1,6 @@
+html{
+   scroll-behavior: smooth;
+}
 body{
    background-color: #F4F1E8;
    font-family: YAEDe2m9QEM-0;
@@ -22,12 +25,15 @@ header{
    
 }
 
+.hello{
+   text-align: center;
+}
+
 #Hello{
    border-bottom: dotted 5px black;
    letter-spacing: -0.021em;
    font-size: 114.9px;
-   text-align: center;
-   
+   width: fit-content;
 }
 
 .I-am{
@@ -67,17 +73,11 @@ h2{
    padding-bottom: 50px;
    font-weight: 400;
    font-size: 42.6667px;
-   word-wrap: break-word;
- 
-   
 }
-
 
 .h2-about-me{
    grid-area: 1 / 1 / 2 / 2;
-   
  }
- 
 
 .about-me-p{
    letter-spacing: 2.5px;
@@ -96,7 +96,6 @@ h2{
 h3{
    font-weight: 100;
 }
-
 
 .project-image{
    width: 210px;
@@ -133,7 +132,6 @@ h3{
    grid-area: 3 / 2 / 4 /3;
 }
 
-
 .pricing-table{
    grid-area: 2 / 3 / 3 / 4;
  }
@@ -145,7 +143,6 @@ h3{
  
 /* History CSS*/
 
-
 .history{
    display: grid;
    grid-template-columns: 50% 50%;
@@ -153,7 +150,6 @@ h3{
    text-align: left;
    margin-top: 25px;
    margin-left: 20px;
-
 }
 
 .skills{
@@ -196,7 +192,7 @@ ul{
    text-align: left;
    margin-top: 25px;
    margin-left: 20px;
-   height: 75vh
+   height: auto;
 
 }
 
@@ -221,6 +217,8 @@ ul{
    grid-area: 2 / 2 / 3 / 3 ;
 }
 
+/*Responsiveness*/
+
 @media (min-width: 1333px) and (max-width: 1452px){
    .history{
       grid-template-rows: repeat(autofill);
@@ -235,8 +233,89 @@ ul{
       margin-top: 10px
    }
 
+
+}
+
+@media  (max-width: 1332px){
+   .grid-container{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      height: auto;
+      width: auto;
+   }
+
+   .about-me-p{
+      margin-top: 0%;
+   }
+
+   .projects{
+      margin-left: 0%;
+   }
+
    h2{
-      
+      padding-bottom: 10px;
+      margin-bottom: 25px;
+      width: 100%;
+   }
+
+   h3{
+      margin-top: 20px;
+   }
+   .painting {
+      padding: 0%;
+      margin: 0%;
+      flex: 50%;
+   }
+
+   .tindog{
+      padding: 0%;
+      margin: 0%;
+      flex: 50%;
+   }
+
+   .pricing-table{
+      padding: 0%;
+      margin: 0%;
+      flex: 50%;
+   }
+
+   .web-design{
+      padding: 0%;
+      margin: 0%;
+      flex: 50%
+   }
+
+   .history{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      height: auto;
+   }
+
+   .certificate-block{
+      margin-left: 0%;
+   }
+
+   .experience-grid{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      height: auto;
+   }
+
+   .experience{
+      padding-bottom: 0%;
    }
 }
 
+@media (max-width: 422px){
+   h1{
+      font-size: 5vh;
+      word-wrap: break-word;
+   }
+
+   h2{
+      font-size: 2rem;
+   }
+}

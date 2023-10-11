@@ -27,7 +27,7 @@ header{
    letter-spacing: -0.021em;
    font-size: 114.9px;
    text-align: center;
-   /*width: fit-content;*/
+   
 }
 
 .I-am{
@@ -48,7 +48,7 @@ p{
  opacity: 1;
 }
 
-/*Abuut me and project CSS*/
+/*About me and project CSS*/
 
 .grid-container{
    display: grid;
@@ -67,6 +67,7 @@ h2{
    padding-bottom: 50px;
    font-weight: 400;
    font-size: 42.6667px;
+   word-wrap: break-word;
  
    
 }
@@ -186,6 +187,8 @@ ul{
    font-size:x-large;
 }
 
+/*Experince CSS*/
+
 .experience-grid{
    display: grid;
    grid-template-columns: 50% 50%;
@@ -218,4 +221,22 @@ ul{
    grid-area: 2 / 2 / 3 / 3 ;
 }
 
+@media (min-width: 1333px) and (max-width: 1452px){
+   .history{
+      grid-template-rows: repeat(autofill);
+   }
+
+   .certs{
+      margin-top: 60px;
+      margin-bottom: 0%;
+   }
+
+   .college{
+      margin-top: 10px
+   }
+
+   h2{
+      
+   }
+}
 
